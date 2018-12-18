@@ -1,0 +1,119 @@
+
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+  h1 {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  /* Simple Responsive Framework. */
+  .row {
+    width: 100%;
+  }
+
+/* Corner elements general*/
+div .plate{
+  position: absolute;
+  width:35%;
+  height:15%;
+  margin-top : 0;
+  margin-left: 0;
+  text-align: center;
+  padding-top: 4px;
+  border: 1px solid black;
+  border-right: 0;
+  border-radius: 0px 5px 0px 5px;
+  left: 65%;
+  top: -1px;
+}
+
+.text{
+  margin: 30px;
+  margin-top: 45px;
+  text-align: left;
+
+}
+
+#chicken{
+  color: black;
+  background-color: #D59898;
+  font-weight: bold;
+}
+
+#beef{
+  color: white;
+  background-color: #C14543;
+  font-weight: bold;
+}
+/* Corner element specification sushi*/
+#sushi{
+  color: black;
+  background-color: #E5D198;
+  font-weight: bold;
+}
+
+
+
+  /********** Desktop only **********/
+  @media (min-width: 992px) {
+
+
+    .col-lg{
+      
+      float: left;
+      position: relative;
+      border: 1px solid black;
+      margin: 1.66%;
+      background-color: #999999;
+      height: 180px;
+      border-radius: 5px 5px 5px 5px;
+      overflow: hidden;
+    } 
+    .col-lg {
+      width: 30%;
+    }
+
+  }
+  
+  /********** Tablets only **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-md {
+      float: left;
+      position: relative;
+      border: 1px solid black;
+      margin: 2.5%;
+      background-color: gray;
+      height: 180px;
+      border-radius: 5px 5px 5px 5px;
+      width: 45%;
+    }
+
+    #sushiCont {
+      margin: 2.5%;
+      width: 95%;
+    }
+
+  }
+
+
+  /********** Mobiles only **********/
+  @media (max-width: 767px) {
+    .col-sm{
+      float: left;
+      position: relative;
+      border: 1px solid black;
+      margin: 2.5%;
+      background-color: gray;
+      height: 180px;
+      border-radius: 5px 5px 5px 5px;
+    }
+    .col-sm {
+      width: 95%;
+     
+    }
+  }
